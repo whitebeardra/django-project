@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, shopping_item
+from .models import Post, shopping_item, images
 
 class shoitem(admin.ModelAdmin):
     list_display = ('name', 'price', 'discount')
@@ -7,3 +7,4 @@ class shoitem(admin.ModelAdmin):
 
 admin.site.register(Post)
 admin.site.register(shopping_item, shoitem)
+admin.site.register(images)
